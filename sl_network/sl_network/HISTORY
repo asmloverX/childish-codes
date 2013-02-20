@@ -1,0 +1,18 @@
+
+                -=== sl_network库的历史 ===-
+
+
+2011/01/26 sl_network 0.2
+=========================
+    * 为Dispatch类添加窗口类型名称的生成接口
+    * 修改SocketHandler类的read接口, 防止当连接断开时造成读取
+数据阻塞
+    * 为sl_network库添加version版本查询接口
+    * 修改了循环缓冲区中的pop操作, 添加了对整个循环缓冲区长度的
+判断, 如果所取的数据长度大于循环缓冲区的长度则直接返回失败
+    * 修改了Buffer操作基础类的一个bug, 在create函数里面, 缓冲区
+长度设置的一个bug
+    * 为Buffer缓冲区操作类和CircularBuffer类添加了清空数据区操作
+    * 在FrameBlock类中添加数据有效性的判断
+    * 修改0.1版本中客户不能断开重连的问题, 在客户SocketHandler退出
+的时候应该相应的反注册WNDCLASS的窗口类别

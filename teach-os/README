@@ -1,0 +1,10 @@
+README for teach-os
+===================
+
+
+收录的一些教学用操作系统
+
+* Demo23 - BrokenThorn Entertainment上的一个操作系统例子
+* nachos - Not Another Completely Heuristic Operating System, 一个C++编写的
+           教学用操作系统(加州大学伯克利分校)
+* pintos - 斯坦福大学教学用操作系统(nachos的替代品, C语言开发)

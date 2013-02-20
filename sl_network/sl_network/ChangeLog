@@ -1,0 +1,43 @@
+    Change Log for sl_network Library
+------------------------------------------
+
+
+Version 0.2             Date: 2011/01/28
+----------------------------------------
+* 为sk_network库的Dispatch类添加一个窗口类型名称成员, 
+    该名称通过UUID来生成, 避免创建多个客户端的时候造成
+    失败(造成窗口类型已存在的错误)
+
+
+Version 0.2             Date: 2011/01/26
+----------------------------------------
+* 为sl_network库的SocketHandler类修改read接口的操作
+
+
+Version 0.2             Date: 2011/01/25
+----------------------------------------
+* 为sl_network库添加版本操作接口
+
+
+Version 0.2             Date: 2011/01/24 
+----------------------------------------
+* 为FrameBlock类添加valid判断
+    bool FrameBlock::isValid() const;
+    
+ 
+Version 0.2             Date: 2011/01/23
+----------------------------------------
+* 为Buffer操作类添加clear清空缓冲区操作
+    void Buffer::clear();
+* 为CircularBuffer类添加clear清空循环缓冲区操作
+    void CircularBuffer::clear();
+* 修改Buffer操作类中的一个bug, 在create函数中创建
+    新的缓冲区的时候长度的判断
+    将原来的bufLen_ = (bufLen_ < SL_BUFSIZE_DEF ? SL_BUFSIZE_DEF : bufLen);
+    修改为bufLen_ = (bufLen < SL_BUFSIZE_DEF ? SL_BUFSIZE_DEF : bufLen);
+   
+
+Version 0.2             Date: 2011/01/15
+----------------------------------------
+* 修改0.1版本中客户不能断开重连的问题, 在客户SocketHandler退出
+    的时候应该相应的反注册WNDCLASS的窗口类别

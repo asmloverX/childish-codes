@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sl_network", "VC90\sl_network.vcproj", "{AA495577-7B26-4CA2-BBC4-C3F81398D775}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA495577-7B26-4CA2-BBC4-C3F81398D775}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA495577-7B26-4CA2-BBC4-C3F81398D775}.Debug|Win32.Build.0 = Debug|Win32
+		{AA495577-7B26-4CA2-BBC4-C3F81398D775}.Release|Win32.ActiveCfg = Release|Win32
+		{AA495577-7B26-4CA2-BBC4-C3F81398D775}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

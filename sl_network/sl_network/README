@@ -1,0 +1,13 @@
+README for sl_network 0.2
+
+
+* 什么是sl_network?
+  -----------------
+  sl_network是一个基于WinSock的网络程序库
+  
+* 使用sl_network
+  --------------
+  sl_network的使用很简单, 每一个类的使用和综合使用
+ 你都可以在test目录下找到对应的例子.
+
+(end of README)

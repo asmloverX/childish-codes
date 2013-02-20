@@ -1,0 +1,15 @@
+
+            -=== sl_network的作者 ===-
+
+    ASMlove <asmsdk@hotmail.com> ** Concept and main design/coding
+    
+    ASMlove不想独占所有参与"sl_network"开发的朋友的共同成果, 
+我仅仅是这个库的创建者和第一个为它写代码的人, 下面是其他的这
+个库的作者和模块编写所借鉴的其他库的编写作者。
+    如果你认为你应该被写到这个文件里, 请联系我。
+
+===========================================================
+    Niels Provos <provos@citi.umich.edu>
+    Nick Mathewson <nick@freehaven.net>
+    Dug Song <dugsong@monkey.org>
+    sl_network的sl_log模块借鉴了libevent-1.4.5中的log模块

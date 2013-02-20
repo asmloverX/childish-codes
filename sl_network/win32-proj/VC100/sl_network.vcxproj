@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA495577-7B26-4CA2-BBC4-C3F81398D775}</ProjectGuid>
+    <RootNamespace>sl_network</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>..\..\bin\$(SolutionName)\$(Configuration)\$(ProjectName).exe</OutputFile>
+      <SubSystem>NotSet</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\..\bin\$(SolutionName)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\..\$(ProjectName)\inc\ ..\..\sl\$(ProjectName)\inc\
+copy ..\..\$(ProjectName)\src\ ..\..\sl\$(ProjectName)\src\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>..\..\bin\$(SolutionName)\$(Configuration)\$(ProjectName).exe</OutputFile>
+      <ProgramDatabaseFile>..\..\bin\$(SolutionName)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\..\$(ProjectName)\inc\ ..\..\sl\$(ProjectName)\inc\
+copy ..\..\$(ProjectName)\src\ ..\..\sl\$(ProjectName)\src\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sl_network\src\sl_buffer.cc" />
+    <ClCompile Include="..\..\sl_network\src\sl_circularbuffer.cc" />
+    <ClCompile Include="..\..\sl_network\src\sl_dispatch.cc" />
+    <ClCompile Include="..\..\sl_network\src\sl_frame.cc" />
+    <ClCompile Include="..\..\sl_network\src\sl_lock.cc" />
+    <ClCompile Include="..\..\sl_network\src\sl_log.c" />
+    <ClCompile Include="..\..\sl_network\src\sl_packet.cc" />
+    <ClCompile Include="..\..\sl_network\src\sl_packetmgr.cc" />
+    <ClCompile Include="..\..\sl_network\src\sl_socket.cc" />
+    <ClCompile Include="..\..\sl_network\src\sl_version.cc" />
+    <ClCompile Include="..\..\sl_network\test\main.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_buffer.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_capp.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_circularbuffer.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_client.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_frame.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_lock.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_packet.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_packetmgr.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_sapp.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_server.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_version.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_temp_test\sl_temp_test.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_temp_test\sl_temp_test_creation_time.cc" />
+    <ClCompile Include="..\..\sl_network\test\sl_temp_test\sl_temp_test_hash_map.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sl\circularbuffer.h" />
+    <ClInclude Include="..\..\sl\dispatch.h" />
+    <ClInclude Include="..\..\sl\frame.h" />
+    <ClInclude Include="..\..\sl\msgprotocol.h" />
+    <ClInclude Include="..\..\sl\netprotocol.h" />
+    <ClInclude Include="..\..\sl\packetmgr.h" />
+    <ClInclude Include="..\..\sl\sl_network.h" />
+    <ClInclude Include="..\..\sl\socket.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_buffer.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_circularbuffer.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_dispatch.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_frame.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_lock.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_log.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_msgprotocol.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_netprotocol.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_packet.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_packetmgr.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_socket.h" />
+    <ClInclude Include="..\..\sl_network\inc\sl_version.h" />
+    <ClInclude Include="..\..\sl_network\res\resource.h" />
+    <ClInclude Include="..\..\sl_network\test\sl_network_test\sl_network_test.h" />
+    <ClInclude Include="..\..\sl_network\test\sl_temp_test\sl_temp_test.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_buffer_doc.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_dispatch_doc.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_lock_doc.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_log_doc.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_msgprotocol_doc.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_netprotocol_doc.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_packet_doc.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_packetmgr_doc.h" />
+    <ClInclude Include="..\..\sl_network\doc\sl_socket_doc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\sl_network\res\sl_network.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sl">
+      <UniqueIdentifier>{3de246eb-198a-4c4e-aab0-ae2d3030e2fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sl_network">
+      <UniqueIdentifier>{ac292912-9edf-448e-826f-7fffc387e80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sl_network\doc">
+      <UniqueIdentifier>{f133a01a-a809-40ab-938c-36b5a9c5002a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sl_network\inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="sl_network\res">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="sl_network\src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="sl_network\test">
+      <UniqueIdentifier>{c73ce7df-9c46-4c3d-a996-78e712502f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sl_network\test\sl_network_test">
+      <UniqueIdentifier>{c0e4b3d9-616a-419c-a6bb-20c1cc8bf61c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sl_network\test\sl_temp_test">
+      <UniqueIdentifier>{e105ab32-c6b0-46e5-aa16-09f69c34b031}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sl_network\src\sl_buffer.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_circularbuffer.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_dispatch.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_frame.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_lock.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_log.c">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_packet.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_packetmgr.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_socket.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\main.cc">
+      <Filter>sl_network\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_buffer.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_capp.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_circularbuffer.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_client.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_frame.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_lock.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_packet.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_packetmgr.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_sapp.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_server.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_temp_test\sl_temp_test.cc">
+      <Filter>sl_network\test\sl_temp_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_temp_test\sl_temp_test_creation_time.cc">
+      <Filter>sl_network\test\sl_temp_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_temp_test\sl_temp_test_hash_map.cc">
+      <Filter>sl_network\test\sl_temp_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\src\sl_version.cc">
+      <Filter>sl_network\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sl_network\test\sl_network_test\sl_network_test_version.cc">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sl_network\inc\sl_buffer.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_circularbuffer.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_dispatch.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_frame.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_lock.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_log.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_msgprotocol.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_netprotocol.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_packet.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_packetmgr.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_socket.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\res\resource.h">
+      <Filter>sl_network\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\test\sl_network_test\sl_network_test.h">
+      <Filter>sl_network\test\sl_network_test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\test\sl_temp_test\sl_temp_test.h">
+      <Filter>sl_network\test\sl_temp_test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_buffer_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_dispatch_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_lock_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_log_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_msgprotocol_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_netprotocol_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_packet_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_packetmgr_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\doc\sl_socket_doc.h">
+      <Filter>sl_network\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl\circularbuffer.h">
+      <Filter>sl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl\dispatch.h">
+      <Filter>sl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl\frame.h">
+      <Filter>sl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl\msgprotocol.h">
+      <Filter>sl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl\netprotocol.h">
+      <Filter>sl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl\packetmgr.h">
+      <Filter>sl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl\sl_network.h">
+      <Filter>sl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl\socket.h">
+      <Filter>sl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sl_network\inc\sl_version.h">
+      <Filter>sl_network\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\sl_network\res\sl_network.rc">
+      <Filter>sl_network\res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
